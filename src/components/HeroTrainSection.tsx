@@ -184,7 +184,7 @@ export const HeroTrainSection: React.FC<HeroTrainSectionProps> = ({
                 <div className="relative w-56 h-15 bg-gradient-to-b from-sky-900 to-blue-950 rounded-t border-t border-sky-400 shadow-lg flex flex-col justify-between p-1.5">
                   <div className="flex justify-between items-center text-[7px] text-white/60 font-mono px-1">
                     <span>NORTHERN ZONE</span>
-                    <span className="text-[#e5a93b] font-bold">B1 · AC 3-TIER</span>
+                    <span className="text-[#e5a93b] font-bold">GEN - SL</span>
                   </div>
 
                   <div className="flex justify-between gap-1.5 my-auto px-1">
@@ -218,7 +218,7 @@ export const HeroTrainSection: React.FC<HeroTrainSectionProps> = ({
                 <div className="relative w-56 h-15 bg-gradient-to-b from-sky-900 to-blue-950 rounded-t border-t border-sky-400 shadow-lg flex flex-col justify-between p-1.5">
                   <div className="flex justify-between items-center text-[7px] text-white/60 font-mono px-1">
                     <span>VARANASI EXP</span>
-                    <span className="text-[#e5a93b] font-bold">B2 · AC 3-TIER</span>
+                    <span className="text-[#e5a93b] font-bold">GEN - SL</span>
                   </div>
 
                   <div className="flex justify-between gap-1.5 my-auto px-1">
