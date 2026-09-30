@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-kashi-gold: #e5a93b;
+  --color-kashi-amber: #f59e0b;
+  --color-kashi-bg: #0b0c10;
+  --color-kashi-surface: #14161f;
+  --color-kashi-border: rgba(255, 255, 255, 0.08);
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #0b0c10;
+    color: #f2efe9;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom train track parallax & moving train animations */
+@keyframes trainTravel {
+  0% {
+    transform: translateX(-110%);
+  }
+  100% {
+    transform: translateX(110vw);
+  }
+}
+
+@keyframes steamPuff {
+  0% {
+    transform: scale(0.6) translateY(0);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.4) translateY(-18px) translateX(-10px);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(2.2) translateY(-32px) translateX(-25px);
+    opacity: 0;
+  }
+}
+
+@keyframes gentleWave {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-4px) rotate(0.5deg);
+  }
+}
+
+.animate-train {
+  animation: trainTravel 22s linear infinite;
+}
+
+.animate-train-fast {
+  animation: trainTravel 14s linear infinite;
+}
+
+.animate-train-slow {
+  animation: trainTravel 32s linear infinite;
+}
+
+.animate-steam {
+  animation: steamPuff 1.6s ease-out infinite;
+}
+
+.animate-boat {
+  animation: gentleWave 6s ease-in-out infinite;
+}
+
+/* Custom thin scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0c10;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #272a36;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e5a93b;
+}
