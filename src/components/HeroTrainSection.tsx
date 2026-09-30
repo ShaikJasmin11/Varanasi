@@ -98,7 +98,7 @@ export const HeroTrainSection: React.FC<HeroTrainSectionProps> = ({
             
             {/* Background Landscape Photo Layer (Lush green Uttar Pradesh fields) */}
             <img
-              src="/src/assets/images/varanasi_train_greenery_1790759397806.jpg"
+              src="/varanasi_train_greenery_1790759397806.jpg"
               alt="Lush green fields and railway tracks en route to Varanasi"
               referrerPolicy="no-referrer"
               className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 ${
