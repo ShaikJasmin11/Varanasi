@@ -72,7 +72,7 @@ export const KashiVishwanathSection: React.FC = () => {
               
               {/* Photo Asset */}
               <img
-                src="/src/assets/images/kashi_vishwanath_temple_1790759413045.jpg"
+                src="/kashi_vishwanath_temple_1790759413045.jpg"
                 alt="Shri Kashi Vishwanath Temple golden spires photographed by Fardin Shaik"
                 referrerPolicy="no-referrer"
                 className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-700 opacity-90"
